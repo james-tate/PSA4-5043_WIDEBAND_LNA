@@ -43,8 +43,12 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="57" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -54,6 +58,52 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="218" name="218bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="219" name="219bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="220" name="220bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="221" name="221bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="223" name="223bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="224" name="224bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -4369,21 +4419,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="R-US">
-<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
-<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="C-US" prefix="C" uservalue="yes">
@@ -5878,779 +5913,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="R-US_" prefix="R" uservalue="yes">
-<description>&lt;B&gt;RESISTOR&lt;/B&gt;, American symbol</description>
-<gates>
-<gate name="G$1" symbol="R-US" x="0" y="0"/>
-</gates>
-<devices>
-<device name="R0402" package="R0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R0603" package="R0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R0805" package="R0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R0805W" package="R0805W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R1206" package="R1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R1206W" package="R1206W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R1210" package="R1210">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R1210W" package="R1210W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R2010" package="R2010">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R2010W" package="R2010W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R2012" package="R2012">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R2012W" package="R2012W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R2512" package="R2512">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R2512W" package="R2512W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R3216" package="R3216">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R3216W" package="R3216W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R3225" package="R3225">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R3225W" package="R3225W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R5025" package="R5025">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R5025W" package="R5025W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R6332" package="R6332">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R6332W" package="R6332W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="M0805" package="M0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="M1206" package="M1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="M1406" package="M1406">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="M2012" package="M2012">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="M2309" package="M2309">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="M3216" package="M3216">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="M3516" package="M3516">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="M5923" package="M5923">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0204/5" package="0204/5">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0204/7" package="0204/7">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0207/10" package="0207/10">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0207/12" package="0207/12">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0207/15" package="0207/15">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0207/2V" package="0207/2V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0207/5V" package="0207/5V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0207/7" package="0207/7">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0309/10" package="0309/10">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0309/12" package="0309/12">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0411/12" package="0411/12">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0411/15" package="0411/15">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0411/3V" package="0411V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0414/15" package="0414/15">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0414/5V" package="0414V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0617/17" package="0617/17">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0617/22" package="0617/22">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0617/5V" package="0617V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0922/22" package="0922/22">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0613/5V" package="P0613V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0613/15" package="P0613/15">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0817/22" package="P0817/22">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0817/7V" package="P0817V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="V234/12" package="V234/12">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="V235/17" package="V235/17">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="V526-0" package="V526-0">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MELF0102AX" package="MINI_MELF-0102AX">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0922V" package="0922V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MELF0102R" package="MINI_MELF-0102R">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MELF0102W" package="MINI_MELF-0102W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MELF0204R" package="MINI_MELF-0204R">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MELF0204W" package="MINI_MELF-0204W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MELF0207R" package="MINI_MELF-0207R">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MELF0207W" package="MINI_MELF-0207W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="RDH/15" package="RDH/15">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0204/2V" package="0204V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0309/V" package="0309V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R0201" package="R0201">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VMTA55" package="VMTA55">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VMTB60" package="VMTB60">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VTA52" package="VTA52">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VTA53" package="VTA53">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VTA54" package="VTA54">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VTA55" package="VTA55">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VTA56" package="VTA56">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R4527" package="R4527">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="WSC0001" package="WSC0001">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="WSC0002" package="WSC0002">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="WSC01/2" package="WSC01/2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="WSC2515" package="WSC2515">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="WSC4527" package="WSC4527">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="WSC6927" package="WSC6927">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="R1218" package="R1218">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1812X7R" package="1812X7R">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="01005" package="R01005">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="con-coax">
@@ -7119,6 +6381,197 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="microusb">
+<packages>
+<package name="USB-MICRO-SMD">
+<wire x1="-2.15" y1="3.9" x2="-2.15" y2="-3.9" width="0.127" layer="49"/>
+<wire x1="2.85" y1="3.9" x2="2.85" y2="-3.9" width="0.127" layer="49"/>
+<wire x1="2.85" y1="3.9" x2="-2.15" y2="3.9" width="0.127" layer="49"/>
+<wire x1="2.85" y1="-3.9" x2="-2.15" y2="-3.9" width="0.127" layer="49"/>
+<wire x1="2.981959375" y1="3.99288125" x2="2" y2="3.99288125" width="0.3048" layer="21"/>
+<wire x1="2" y1="3.99288125" x2="2" y2="4" width="0.3048" layer="21"/>
+<wire x1="3" y1="4" x2="3" y2="3" width="0.3048" layer="21"/>
+<wire x1="2" y1="-4" x2="3" y2="-4" width="0.3048" layer="21"/>
+<wire x1="3" y1="-4" x2="3" y2="-3" width="0.3048" layer="21"/>
+<wire x1="-1" y1="4" x2="-2" y2="4" width="0.3048" layer="21"/>
+<wire x1="-1" y1="-4" x2="-2" y2="-4" width="0.3048" layer="21"/>
+<wire x1="1.89991875" y1="1.6002" x2="2.499359375" y2="1.6002" width="0" layer="21"/>
+<rectangle x1="-0.75" y1="2.784" x2="0.75" y2="4.584" layer="1"/>
+<rectangle x1="-0.75" y1="-4.584" x2="0.75" y2="-2.784" layer="1"/>
+<rectangle x1="-0.75" y1="2.784" x2="0.75" y2="4.584" layer="31"/>
+<rectangle x1="-0.75" y1="-4.584" x2="0.75" y2="-2.784" layer="31"/>
+<rectangle x1="-0.85" y1="2.684" x2="0.85" y2="4.684" layer="29"/>
+<rectangle x1="-0.85" y1="-4.684" x2="0.85" y2="-2.684" layer="29"/>
+<smd name="D+1" x="2.7" y="0" dx="0.4" dy="1.4" layer="1" rot="R90"/>
+<smd name="D-1" x="2.7" y="0.65" dx="0.4" dy="1.4" layer="1" rot="R90"/>
+<smd name="GND1" x="2.7" y="-1.3" dx="0.4" dy="1.4" layer="1" rot="R90"/>
+<smd name="ID1" x="2.7" y="-0.65" dx="0.4" dy="1.4" layer="1" rot="R90"/>
+<smd name="VBUS1" x="2.7" y="1.3" dx="0.4" dy="1.4" layer="1" rot="R90"/>
+<text x="-1.27" y="5.969" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.27" y="5.461" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="USB_AB">
+<description>USB AB, 5-pins: USBVCC, GND, D+, D-, USBID.</description>
+<wire x1="2.54" y1="6.35" x2="-2.54" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="6.35" x2="-2.54" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-6.35" x2="2.54" y2="-6.35" width="0.254" layer="94"/>
+<pin name="D+" x="-5.08" y="0" visible="pad" length="short"/>
+<pin name="D-" x="-5.08" y="-2.54" visible="pad" length="short"/>
+<pin name="GND" x="-5.08" y="5.08" visible="pad" length="short"/>
+<pin name="USBID" x="-5.08" y="2.54" visible="pad" length="short"/>
+<pin name="VBUS" x="-5.08" y="-5.08" visible="pad" length="short"/>
+<text x="1.27" y="-6.096" size="2.54" layer="94" rot="R90">USBAB</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="USB" prefix="U" uservalue="yes">
+<description>This is a USB AB connector that is compatible with USB OTG. i.e. this connector can serve as a host or device</description>
+<gates>
+<gate name="G$1" symbol="USB_AB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="&quot;&quot;" package="USB-MICRO-SMD">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+1"/>
+<connect gate="G$1" pin="D-" pad="D-1"/>
+<connect gate="G$1" pin="GND" pad="GND1"/>
+<connect gate="G$1" pin="USBID" pad="ID1"/>
+<connect gate="G$1" pin="VBUS" pad="VBUS1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="diode">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT23">
+<description>&lt;B&gt;DIODE&lt;/B&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.1524" x2="-1.4224" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="-1.4224" y1="0.6604" x2="-0.8636" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.1524" width="0.1524" layer="21"/>
+<wire x1="0.8636" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="21"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="KA2KA">
+<wire x1="-1.27" y1="1.27" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.27" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="3.81" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="0.762" y="2.0066" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.826" y="-3.4544" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="C" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="A" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="AC" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BAV199" prefix="D">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+low-leakage double diode</description>
+<gates>
+<gate name="G$1" symbol="KA2KA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="AC" pad="3"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="minicircuits">
+<packages>
+<package name="GU1414">
+<smd name="NC" x="-1.3" y="1.65" dx="0.79" dy="1.68" layer="1" rot="R180"/>
+<smd name="3" x="0.7" y="1.65" dx="2.06" dy="1.68" layer="1" rot="R180"/>
+<smd name="GND" x="0" y="-1.24" dx="2.11" dy="0.79" layer="1" rot="R90"/>
+<smd name="2" x="1.3" y="-1.65" dx="0.79" dy="1.68" layer="1" rot="R180"/>
+<smd name="1" x="-1.3" y="-1.65" dx="0.79" dy="1.68" layer="1" rot="R180"/>
+<text x="-2.54" y="3.175" size="1.27" layer="21">&gt;NAME</text>
+<wire x1="-2" y1="2.5" x2="-2" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2" y1="-2.5" x2="2" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2" y1="-2.5" x2="2" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2" y1="2.5" x2="-2" y2="2.5" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BIASTEE">
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="1" x="-17.78" y="0" length="middle"/>
+<pin name="2" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="3" x="0" y="15.24" length="middle" rot="R270"/>
+<pin name="GND" x="0" y="-15.24" length="middle" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BIASTEE">
+<gates>
+<gate name="G$1" symbol="BIASTEE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GU1414">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7129,103 +6582,201 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="FILTER" library="custom" deviceset="BANDPASS" device=""/>
-<part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
-<part name="PSA4-5043+" library="custom" deviceset="AMP" device=""/>
-<part name="C1" library="rcl" deviceset="C-US" device="C0402"/>
 <part name="X1" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
 <part name="L1" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="J1" library="rcl" deviceset="R-US_" device="R0805"/>
 <part name="X2" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
+<part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
+<part name="POWER" library="microusb" deviceset="USB" device="&quot;&quot;"/>
+<part name="C1" library="rcl" deviceset="C-US" device="C0402"/>
+<part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
+<part name="D1" library="diode" deviceset="BAV199" device=""/>
+<part name="C3" library="rcl" deviceset="C-US" device="C0402"/>
+<part name="J1" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="J2" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="L2" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="F1" library="custom" deviceset="BANDPASS" device=""/>
+<part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
+<part name="C2" library="rcl" deviceset="C-US" device="C0402"/>
+<part name="U2" library="custom" deviceset="AMP" device=""/>
+<part name="U1" library="minicircuits" deviceset="BIASTEE" device=""/>
+<part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="FILTER" gate="G$1" x="-12.7" y="2.54"/>
-<instance part="SUPPLY1" gate="GND" x="-12.7" y="-22.86"/>
-<instance part="PSA4-5043+" gate="G$1" x="55.88" y="2.54"/>
-<instance part="C1" gate="G$1" x="20.32" y="2.54" rot="R270"/>
 <instance part="X1" gate="G1" x="-55.88" y="2.54"/>
-<instance part="L1" gate="G$1" x="-43.18" y="17.78" rot="R90"/>
-<instance part="J1" gate="G$1" x="101.6" y="17.78" rot="R90"/>
-<instance part="X2" gate="G1" x="127" y="2.54" rot="R180"/>
+<instance part="L1" gate="G$1" x="-43.18" y="7.62" rot="R90"/>
+<instance part="X2" gate="G1" x="170.18" y="2.54" rot="R180"/>
+<instance part="SUPPLY2" gate="GND" x="-43.18" y="-15.24"/>
+<instance part="SUPPLY3" gate="GND" x="17.78" y="-25.4"/>
+<instance part="SUPPLY4" gate="GND" x="149.86" y="-10.16"/>
+<instance part="POWER" gate="G$1" x="81.28" y="48.26"/>
+<instance part="C1" gate="G$1" x="71.12" y="20.32" rot="R270"/>
+<instance part="SUPPLY6" gate="GND" x="66.04" y="17.78"/>
+<instance part="D1" gate="G$1" x="-43.18" y="-7.62"/>
+<instance part="C3" gate="G$1" x="66.04" y="48.26" rot="R180"/>
+<instance part="J1" gate="G$1" x="10.16" y="33.02" rot="R180"/>
+<instance part="J2" gate="G$1" x="73.66" y="27.94" rot="R270"/>
+<instance part="L2" gate="G$1" x="139.7" y="7.62" rot="R270"/>
+<instance part="F1" gate="G$1" x="114.3" y="2.54"/>
+<instance part="SUPPLY1" gate="GND" x="114.3" y="-15.24"/>
+<instance part="SUPPLY5" gate="GND" x="53.34" y="50.8"/>
+<instance part="C2" gate="G$1" x="-22.86" y="2.54" rot="R270"/>
+<instance part="U2" gate="G$1" x="17.78" y="2.54"/>
+<instance part="U1" gate="G$1" x="73.66" y="2.54"/>
+<instance part="SUPPLY7" gate="GND" x="73.66" y="-20.32"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="FILTER" gate="G$1" pin="GND"/>
-<pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="PSA4-5043+" gate="G$1" pin="GND"/>
-<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-17.78" x2="55.88" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-25.4" x2="-2.54" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="-25.4" x2="-2.54" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="-15.24" x2="-12.7" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="-12.7" y="-15.24"/>
-<pinref part="X1" gate="G1" pin="2"/>
-<wire x1="-53.34" y1="0" x2="-27.94" y2="0" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="0" x2="-27.94" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="-15.24" x2="-12.7" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G1" pin="2"/>
-<wire x1="124.46" y1="5.08" x2="119.38" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="5.08" x2="119.38" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="-25.4" x2="55.88" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="55.88" y="-25.4"/>
+<wire x1="17.78" y1="-17.78" x2="17.78" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="SUPPLY3" gate="GND" pin="GND"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
 </segment>
-</net>
-<net name="N$2" class="0">
 <segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="PSA4-5043+" gate="G$1" pin="RFIN"/>
-<wire x1="22.86" y1="2.54" x2="38.1" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G1" pin="2"/>
+<wire x1="167.64" y1="5.08" x2="149.86" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="5.08" x2="149.86" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="GND" pin="GND"/>
 </segment>
-</net>
-<net name="N$3" class="0">
+<segment>
+<pinref part="F1" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY1" gate="GND" pin="GND"/>
+<wire x1="114.3" y1="-12.7" x2="114.3" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="FILTER" gate="G$1" pin="RFOUT"/>
-<wire x1="15.24" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="POWER" gate="G$1" pin="GND"/>
+<wire x1="53.34" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="53.34" x2="76.2" y2="53.34" width="0.1524" layer="91"/>
+<junction x="66.04" y="53.34"/>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G1" pin="2"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="-53.34" y1="-7.62" x2="-53.34" y2="0" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-7.62" x2="-50.8" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="-50.8" y1="-7.62" x2="-53.34" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-7.62" x2="-35.56" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-7.62" x2="-35.56" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-12.7" x2="-43.18" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-12.7" x2="-50.8" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-12.7" x2="-50.8" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="-50.8" y="-7.62"/>
+<pinref part="SUPPLY2" gate="GND" pin="GND"/>
+<junction x="-43.18" y="-12.7"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+<wire x1="73.66" y1="-17.78" x2="73.66" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="RFIN" class="0">
 <segment>
 <pinref part="X1" gate="G1" pin="1"/>
-<pinref part="FILTER" gate="G$1" pin="RFIN"/>
 <wire x1="-53.34" y1="2.54" x2="-43.18" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="-43.18" y1="2.54" x2="-30.48" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="12.7" x2="-43.18" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="2.54" x2="-43.18" y2="2.54" width="0.1524" layer="91"/>
 <junction x="-43.18" y="2.54"/>
+<pinref part="D1" gate="G$1" pin="AC"/>
+<wire x1="-43.18" y1="-5.08" x2="-43.18" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="-43.18" y1="22.86" x2="-43.18" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="40.64" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="22.86" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="POWER" gate="G$1" pin="VBUS"/>
+<wire x1="76.2" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="43.18" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<junction x="73.66" y="43.18"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="45.72" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="L2" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="12.7" x2="139.7" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<junction x="73.66" y="33.02"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="PSA4-5043+" gate="G$1" pin="RF/DC-OUT"/>
-<wire x1="101.6" y1="2.54" x2="86.36" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="12.7" x2="101.6" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="2.54" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="RF/DC-OUT"/>
+<pinref part="U1" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<wire x1="91.44" y1="2.54" x2="96.52" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="RFIN"/>
+<pinref part="U1" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="-43.18" y1="12.7" x2="-43.18" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="-43.18" y1="33.02" x2="5.08" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BIASPOWER" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="22.86" x2="73.66" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="20.32" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
+<junction x="73.66" y="20.32"/>
+<pinref part="U1" gate="G$1" pin="3"/>
+</segment>
+</net>
+<net name="RFOUT" class="0">
+<segment>
 <pinref part="X2" gate="G1" pin="1"/>
-<wire x1="124.46" y1="2.54" x2="101.6" y2="2.54" width="0.1524" layer="91"/>
-<junction x="101.6" y="2.54"/>
+<pinref part="F1" gate="G$1" pin="RFOUT"/>
+<wire x1="167.64" y1="2.54" x2="139.7" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="L2" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="2.54" x2="132.08" y2="2.54" width="0.1524" layer="91"/>
+<junction x="139.7" y="2.54"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="U2" gate="G$1" pin="RFIN"/>
+<wire x1="-20.32" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,-44.1748,7.62,L1,,,,,"/>
+<approved hash="113,1,77.5954,48.3144,POWER,,,,,"/>
+<approved hash="113,1,69.85,19.2247,C1,,,,,"/>
+<approved hash="113,1,64.9447,49.53,C3,,,,,"/>
+<approved hash="113,1,10.16,32.0252,J1,,,,,"/>
+<approved hash="113,1,74.6548,27.94,J2,,,,,"/>
+<approved hash="113,1,140.695,7.62,L2,,,,,"/>
+<approved hash="113,1,-24.13,1.44466,C2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
