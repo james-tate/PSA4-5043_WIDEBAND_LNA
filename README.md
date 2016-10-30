@@ -6,7 +6,5 @@
 
 [Optional bandpass filter](http://www.minicircuits.com/products/filters_sm_bandpass.shtml). 
 
-[Eagle Files and Gerbers](https://github.com/james-tate/superlna)
-
 Feel free to contact me  if any questions or if you suggest changes. 
 
