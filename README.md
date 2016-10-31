@@ -1,4 +1,4 @@
-#PSA4-5043 LNA with onboard Bias tee designed for use with RTL SDR dongles. LNA has two power options, USB mini or power from dongle. There is also option for an on-board wideband bias tee and bandpass filter.
+#PSA4-5043 LNA with onboard Bias tee designed for use with RTL SDR dongles, hackrf, or other SDR. LNA has two power options, USB mini or power from inline. There is also an option for an on-board wideband bias tee and bandpass filter.
 
 [PSA4-5043 ](http://www.minicircuits.com/pdfs/PSA4-5043+.pdf) -- .05 to 4GHz  
 
