@@ -6,13 +6,13 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="7" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
@@ -1669,8 +1669,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <vertex x="11.2" y="9.2"/>
 <vertex x="16.6" y="9.2"/>
 <vertex x="16.6" y="7.6"/>
-<vertex x="16.2" y="7.2"/>
-<vertex x="10.2" y="7.2"/>
+<vertex x="16.2" y="6.946"/>
+<vertex x="10.2" y="6.946"/>
 <vertex x="10.2" y="5.4"/>
 <vertex x="31" y="5.4"/>
 <vertex x="31" y="7.2"/>
@@ -1811,16 +1811,18 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="L1" pad="1"/>
 <contactref element="D1" pad="3"/>
 <contactref element="C2" pad="2"/>
-<wire x1="2.9554" y1="8.16" x2="6.75" y2="8.16" width="1.6764" layer="1"/>
-<wire x1="6.75" y1="8.16" x2="8.8" y2="8.16" width="0.8128" layer="1"/>
-<wire x1="8.8" y1="8.16" x2="9.6" y2="8.16" width="0.8128" layer="1"/>
-<wire x1="9.6" y1="8.16" x2="11.64" y2="8.16" width="0.8128" layer="1"/>
 <wire x1="11.64" y1="8.16" x2="11.64" y2="8.2" width="1.016" layer="1"/>
 <wire x1="8.77" y1="6.51" x2="8.75" y2="6.74" width="0.6096" layer="1"/>
 <wire x1="9.7" y1="10.73" x2="9.6" y2="10.73" width="0.8128" layer="1"/>
-<wire x1="9.6" y1="10.73" x2="9.6" y2="8.16" width="0.8128" layer="1"/>
 <wire x1="8.75" y1="6.74" x2="8.8" y2="6.74" width="0.8128" layer="1"/>
-<wire x1="8.8" y1="6.74" x2="8.8" y2="8.16" width="0.8128" layer="1"/>
+<wire x1="11.64" y1="8.16" x2="10.414" y2="8.16" width="1.016" layer="1"/>
+<wire x1="10.414" y1="8.16" x2="10.414" y2="8.128" width="1.016" layer="1"/>
+<wire x1="10.414" y1="8.128" x2="9.7" y2="8.128" width="1.27" layer="1"/>
+<wire x1="9.7" y1="8.128" x2="9.7" y2="10.73" width="1.27" layer="1"/>
+<wire x1="9.7" y1="8.128" x2="8.77" y2="8.128" width="1.27" layer="1"/>
+<wire x1="8.77" y1="8.128" x2="8.77" y2="6.51" width="1.27" layer="1"/>
+<wire x1="8.77" y1="8.128" x2="2.9554" y2="8.128" width="1.27" layer="1"/>
+<wire x1="2.9554" y1="8.128" x2="2.9554" y2="8.16" width="1.27" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="POWER" pad="VBUS1"/>
@@ -1881,18 +1883,19 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="X2" pad="1"/>
 <contactref element="F1" pad="RFOUT"/>
 <contactref element="L2" pad="2"/>
-<wire x1="30.45" y1="8.8" x2="33.55" y2="8.8" width="1.016" layer="1"/>
-<wire x1="34.2" y1="8.8" x2="35" y2="8" width="1.016" layer="1"/>
-<wire x1="35" y1="8" x2="38.1346" y2="8" width="1.6764" layer="1"/>
-<wire x1="38.1346" y1="8" x2="38.3446" y2="7.79" width="1.016" layer="1"/>
-<wire x1="34.2" y1="8.8" x2="33.55" y2="8.8" width="1.016" layer="1"/>
-<wire x1="33.55" y1="8.8" x2="33.55" y2="10.7" width="1.016" layer="1"/>
+<wire x1="30.45" y1="8.8" x2="33.55" y2="8.8" width="1.27" layer="1"/>
+<wire x1="33.55" y1="8.8" x2="33.55" y2="9.144" width="1.27" layer="1"/>
+<wire x1="33.55" y1="9.144" x2="33.55" y2="10.7" width="1.27" layer="1"/>
+<wire x1="38.3446" y1="7.79" x2="35.052" y2="7.79" width="1.27" layer="1"/>
+<wire x1="35.052" y1="7.79" x2="35.052" y2="7.874" width="1.27" layer="1"/>
+<wire x1="35.052" y1="7.874" x2="34.82" y2="7.874" width="1.27" layer="1"/>
+<wire x1="34.82" y1="7.874" x2="33.55" y2="9.144" width="1.27" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="C2" pad="1"/>
 <contactref element="U2" pad="RFIN"/>
-<wire x1="15.3893875" y1="8.177865625" x2="12.962134375" y2="8.177865625" width="0.8128" layer="1"/>
-<wire x1="12.962134375" y1="8.177865625" x2="12.94" y2="8.2" width="0.8128" layer="1"/>
+<wire x1="12.94" y1="8.2" x2="15.3893875" y2="8.2" width="1.27" layer="1"/>
+<wire x1="15.3893875" y1="8.2" x2="15.3893875" y2="8.177865625" width="1.27" layer="1"/>
 </signal>
 <signal name="N$1">
 </signal>
