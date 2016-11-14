@@ -122,17 +122,6 @@
 <wire x1="-0.4" y1="-1" x2="-0.9" y2="-1" width="0.127" layer="51"/>
 <text x="-3.3" y="1.7" size="1.27" layer="21">&gt;NAME</text>
 </package>
-<package name="SOC-343">
-<smd name="GND1" x="-1.3" y="1.6" dx="0.6" dy="0.8" layer="1" rot="R180"/>
-<smd name="RFIN" x="1.3" y="1.6" dx="0.6" dy="0.8" layer="1"/>
-<smd name="GND" x="1.3" y="-1.6" dx="0.8" dy="0.9" layer="1" rot="R90"/>
-<smd name="RFOUT_DCIN" x="-1.3" y="-1.6" dx="0.6" dy="0.8" layer="1" rot="R180"/>
-<text x="-2.54" y="2.54" size="1.27" layer="21">&gt;NAME</text>
-<wire x1="-1.9" y1="1.1" x2="-1.9" y2="-1.1" width="0.127" layer="51"/>
-<wire x1="-1.9" y1="-1.1" x2="2" y2="-1.1" width="0.127" layer="51"/>
-<wire x1="2" y1="-1.1" x2="2" y2="1.1" width="0.127" layer="51"/>
-<wire x1="2" y1="1.1" x2="-1.9" y2="1.1" width="0.127" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="FILTER">
@@ -146,14 +135,6 @@
 <text x="-12.7" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-5.08" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
-<symbol name="AMP">
-<wire x1="25.4" y1="0" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="22.86" x2="25.4" y2="0" width="0.254" layer="94"/>
-<pin name="RFIN" x="-17.78" y="0" length="middle"/>
-<pin name="RF/DC-OUT" x="30.48" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="0" y="-20.32" length="middle" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BANDPASS">
@@ -166,23 +147,6 @@
 <connect gate="G$1" pin="GND" pad="G1 G2"/>
 <connect gate="G$1" pin="RFIN" pad="RFIN"/>
 <connect gate="G$1" pin="RFOUT" pad="RFOUT"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AMP">
-<gates>
-<gate name="G$1" symbol="AMP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOC-343">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND GND1"/>
-<connect gate="G$1" pin="RF/DC-OUT" pad="RFOUT_DCIN"/>
-<connect gate="G$1" pin="RFIN" pad="RFIN"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6533,10 +6497,21 @@ low-leakage double diode</description>
 <smd name="2" x="1.3" y="-1.65" dx="0.79" dy="1.68" layer="1" rot="R180"/>
 <smd name="1" x="-1.3" y="-1.65" dx="0.79" dy="1.68" layer="1" rot="R180"/>
 <text x="-2.54" y="3.175" size="1.27" layer="21">&gt;NAME</text>
-<wire x1="-2" y1="2.5" x2="-2" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="-2" y1="-2.5" x2="2" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="2" y1="-2.5" x2="2" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2" y1="2.5" x2="-2" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2" y1="2.5" x2="-2" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2.5" x2="2" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-2.5" x2="2" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="2.5" x2="-2" y2="2.5" width="0.127" layer="21"/>
+</package>
+<package name="SOC-343">
+<smd name="GND1" x="-0.6" y="1.1" dx="0.6" dy="0.8" layer="1" rot="R180"/>
+<smd name="RFIN" x="0.615" y="1.1" dx="0.6" dy="0.8" layer="1"/>
+<smd name="GND" x="0.6" y="-1.1" dx="0.8" dy="0.9" layer="1" rot="R90"/>
+<smd name="RFOUT_DCIN" x="-0.6" y="-1.1" dx="0.6" dy="0.8" layer="1" rot="R180"/>
+<text x="-2.54" y="2.54" size="1.27" layer="21">&gt;NAME</text>
+<wire x1="-1.17" y1="0.585" x2="1.17" y2="0.585" width="0.127" layer="21"/>
+<wire x1="1.17" y1="0.585" x2="1.17" y2="-0.585" width="0.127" layer="21"/>
+<wire x1="1.17" y1="-0.585" x2="-1.17" y2="-0.585" width="0.127" layer="21"/>
+<wire x1="-1.17" y1="-0.585" x2="-1.17" y2="0.585" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6549,6 +6524,14 @@ low-leakage double diode</description>
 <pin name="2" x="17.78" y="0" length="middle" rot="R180"/>
 <pin name="3" x="0" y="15.24" length="middle" rot="R270"/>
 <pin name="GND" x="0" y="-15.24" length="middle" rot="R90"/>
+</symbol>
+<symbol name="AMP">
+<wire x1="25.4" y1="0" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="22.86" x2="25.4" y2="0" width="0.254" layer="94"/>
+<pin name="RFIN" x="-17.78" y="0" length="middle"/>
+<pin name="RF/DC-OUT" x="30.48" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-20.32" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6563,6 +6546,23 @@ low-leakage double diode</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AMP">
+<gates>
+<gate name="G$1" symbol="AMP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOC-343">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND GND1"/>
+<connect gate="G$1" pin="RF/DC-OUT" pad="RFOUT_DCIN"/>
+<connect gate="G$1" pin="RFIN" pad="RFIN"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6600,9 +6600,9 @@ low-leakage double diode</description>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="C2" library="rcl" deviceset="C-US" device="C0402"/>
-<part name="U2" library="custom" deviceset="AMP" device=""/>
 <part name="U1" library="minicircuits" deviceset="BIASTEE" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
+<part name="U$1" library="minicircuits" deviceset="AMP" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6627,9 +6627,9 @@ low-leakage double diode</description>
 <instance part="SUPPLY1" gate="GND" x="114.3" y="-15.24"/>
 <instance part="SUPPLY5" gate="GND" x="53.34" y="50.8"/>
 <instance part="C2" gate="G$1" x="-22.86" y="2.54" rot="R270"/>
-<instance part="U2" gate="G$1" x="17.78" y="2.54"/>
 <instance part="U1" gate="G$1" x="73.66" y="2.54"/>
 <instance part="SUPPLY7" gate="GND" x="73.66" y="-20.32"/>
+<instance part="U$1" gate="G$1" x="17.78" y="2.54"/>
 </instances>
 <busses>
 </busses>
@@ -6638,7 +6638,7 @@ low-leakage double diode</description>
 <segment>
 <wire x1="17.78" y1="-17.78" x2="17.78" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="X2" gate="G1" pin="2"/>
@@ -6718,8 +6718,8 @@ low-leakage double diode</description>
 <net name="N$5" class="0">
 <segment>
 <wire x1="55.88" y1="2.54" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="RF/DC-OUT"/>
 <pinref part="U1" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="RF/DC-OUT"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -6760,7 +6760,7 @@ low-leakage double diode</description>
 <net name="N$2" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="U2" gate="G$1" pin="RFIN"/>
+<pinref part="U$1" gate="G$1" pin="RFIN"/>
 <wire x1="-20.32" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
